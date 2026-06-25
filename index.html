@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjyot Chavan | Data Analyst Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15,23,42,.9);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.hero-content span{
+color:#38bdf8;
+}
+
+.hero-content p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+margin:10px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#38bdf8;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+}
+
+footer{
+padding:20px;
+text-align:center;
+background:#020617;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:40px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">SC</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Hi, I'm <span>Sanjyot Chavan</span></h1>
+
+<p id="typing"></p>
+
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<div class="card">
+<h3>Profile</h3>
+<br>
+<p>
+Data Science graduate and PG-DBDA student with experience in
+Machine Learning, Data Analytics, Predictive Analytics,
+Recommendation Systems and Big Data technologies.
+</p>
+</div>
+
+<div class="card">
+<h3>Internship Experience</h3>
+<br>
+<p>
+IIT Bombay Internship (June 2024 - Sept 2024)
+worked on NLP, BERT models, Machine Learning and
+Data Analytics solutions in EdTech applications.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">Python</div>
+<div class="skill">SQL</div>
+<div class="skill">PySpark</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">Deep Learning</div>
+<div class="skill">Pandas</div>
+<div class="skill">NumPy</div>
+<div class="skill">Scikit-Learn</div>
+<div class="skill">Data Analytics</div>
+<div class="skill">EDA</div>
+<div class="skill">Feature Engineering</div>
+<div class="skill">Data Visualization</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+
+<h3>Tourist Recommendation System</h3>
+<br>
+
+<p>
+Personalized recommendation engine suggesting
+destinations, hotels and transportation based on
+user interests, location and budget.
+</p>
+
+<br>
+
+<strong>Tech:</strong>
+Python, ML, Recommendation System
+
+</div>
+
+<div class="project-card">
+
+<h3>Predictive Maintenance System</h3>
+<br>
+
+<p>
+Built ML model using NASA C-MAPSS dataset to predict
+Remaining Useful Life (RUL) of turbofan engines.
+Integrated with Streamlit dashboard.
+</p>
+
+<br>
+
+<strong>Tech:</strong>
+Python, Random Forest, Streamlit
+
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="timeline">
+
+<div class="card">
+<h3>PG-DBDA</h3>
+<p>C-DAC Bangalore</p>
+<p>2025 - 2026</p>
+</div>
+
+<div class="card">
+<h3>B.Tech Data Science</h3>
+<p>D.Y Patil College of Engineering & Technology</p>
+<p>CGPA : 6.0</p>
+<p>2025</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>📧 sanjyotchavan06@gmail.com</p>
+
+<p>📱 +91 63646 26559</p>
+
+<p>🔗 linkedin.com/in/sanjyot-chavan11</p>
+
+<p>Languages: English, Hindi, Marathi</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Sanjyot Chavan | Data Analyst Portfolio</p>
+
+</footer>
+
+<script>
+
+const text =
+"Data Analyst | Data Engineer | Machine Learning Enthusiast | Big Data Analytics";
+
+let i = 0;
+
+function typingEffect(){
+
+if(i < text.length){
+
+document.getElementById("typing").innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typingEffect,60);
+
+}
+
+}
+
+typingEffect();
+
+</script>
+
+</body>
+</html>
